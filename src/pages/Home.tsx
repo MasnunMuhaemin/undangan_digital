@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Header, SubHeader } from "../components"
+import { Header, SubHeader, Modal } from "../components"
 import invitations from "../lib/data.json";
 import Notfound from "./404";
 import { FaPause, FaPlay } from "react-icons/fa6";
@@ -49,7 +49,7 @@ const Home = () => {
           <FaPlay size={30} color="#BCC2BF" />
         )}
       </div>
-      {/* <Modal audio={audio} /> */}
+      <Modal audio={audio} />
     </div>
   );
 };
