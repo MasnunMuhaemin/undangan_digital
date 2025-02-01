@@ -1,8 +1,8 @@
 const SubHeader = () => {
   return (
-    <div className="w-full  flex justify-center bg-black text-white py-8">
+    <div className="w-full  flex justify-center text-tertiary py-8">
       {/* Wrapper untuk mempertahankan ukuran Mobile L */}
-      <div className="w-full max-w-[425px] bg-black text-center">
+      <div className="w-full max-w-[425px] text-center">
         <img
           src="/images/ornamen/bismilah.png"
           alt="Bismillah"

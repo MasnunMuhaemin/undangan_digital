@@ -1,6 +1,6 @@
 const Maps = () => {
   return (
-    <div className="flex">
+    <div className="flex text-tertiary">
       {/* Container Utama */}
       <div className="w-[90%] max-w-3xl p-5 rounded-lg relative">
         {/* Lokasi */}

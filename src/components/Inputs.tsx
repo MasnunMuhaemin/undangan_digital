@@ -101,7 +101,7 @@ const Inputs = ({ name }: { name: string }) => {
       </form>
 
       <div className="w-[90%] max-w-md p-4 bg-secondary rounded-lg shadow-lg">
-        <h2 className="font1 text-lg font-bold text-center mb-4">
+        <h2 className="font1 text-lg font-bold text-center mb-4 text-tertiary">
           Daftar Konfirmasi
         </h2>
         <div className="max-h-48 overflow-y-auto border rounded-md p-2 bg-white shadow-inner">
