@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Header, SubHeader, Modal, WeddingCountdown, Maps } from "../components"
+import { Header, SubHeader, Modal, WeddingCountdown, Maps, Inputs } from "../components"
 import invitations from "../lib/data.json";
 import Notfound from "./404";
 import { FaPause, FaPlay } from "react-icons/fa6";
@@ -41,6 +41,7 @@ const Home = () => {
       <SubHeader />
       <WeddingCountdown />
       <Maps />
+      <Inputs name={name} />
       <div
         className="fixed top-5 right-5 p-2 cursor-pointer rounded-lg"
         onClick={handleToogle}
