@@ -31,12 +31,21 @@ export default function Modal({ audio }: { audio: HTMLAudioElement }) {
   );
 
   return (
-    <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://source.unsplash.com/random')" }}>
-      <div className={`fixed inset-0 transition-colors ${open ? "visible bg-black/20" : "invisible"}`}>
+    <div
+      className="relative h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url('https://source.unsplash.com/random')" }}
+    >
+      <div
+        className={`fixed inset-0 transition-colors ${
+          open ? "visible bg-black/20" : "invisible"
+        }`}
+      >
         <div className="absolute inset-0 bg-center bg-no-repeat bg-black opacity-[.75] z-0"></div>
         <div
           onClick={(e) => e.stopPropagation()}
-          className={`bg-[image:url('/images/wedding/header.jpeg')] md:bg-[image:url('/images/wedding/header.jpeg')] bg-cover z-10 bg-center bg-no-repeat shadow p-6 transition-all duration-500 w-full h-full ${open ? "opacity-100" : "scale-125 opacity-0"}`}
+          className={`bg-[image:url('/images/wedding/header.jpeg')] md:bg-[image:url('/images/wedding/header.jpeg')] bg-cover z-10 bg-center bg-no-repeat shadow p-6 transition-all duration-500 w-full h-full ${
+            open ? "opacity-100" : "scale-125 opacity-0"
+          }`}
         >
           <div className="relative md:right-0 top-0 px-0 h-full text-center flex flex-col items-center justify-center">
             <div className="flex gap-10 items-center justify-center">
@@ -61,7 +70,13 @@ export default function Modal({ audio }: { audio: HTMLAudioElement }) {
                 </defs>
               </svg>
             </div>
-
+            <div className="mb-8">
+              <img
+                src="/path-to-gold-icon.png"
+                alt="Gold Icon"
+                className="w-12 mx-auto"
+              />
+            </div>
             <p className="font1 text-[xs] mb-3 sm:font-bold sm:text-2xl md:text-2xl">
               THE WEDDING OF
             </p>
@@ -93,26 +108,6 @@ export default function Modal({ audio }: { audio: HTMLAudioElement }) {
           </div>
         </div>
       </div>
-
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-      <div className="relative flex flex-col items-center justify-center h-full text-center text-white">
-        {/* Gold Icon */}
-        <div className="mb-8">
-          <img src="/path-to-gold-icon.png" alt="Gold Icon" className="w-12 mx-auto" />
-        </div>
-        {/* Title */}
-        <h1 className="text-lg uppercase tracking-widest mb-2">The Wedding of</h1>
-        <h2 className="text-4xl font-bold mb-4">Wisnu & Meilani</h2>
-        {/* Recipient */}
-        <p className="text-lg mb-8">Kepada Yth.<br /><span className="font-semibold">{invitedPerson?.name || "Tamu Undangan"}</span></p>
-        {/* Button */}
-        <button
-          onClick={() => setOpen(false)}
-          className="px-6 py-2 bg-white text-black rounded-full hover:bg-gray-200 transition"
-        >
-          Buka Undangan
-        </button>
-      </div>
     </div>
   );
-};
+}

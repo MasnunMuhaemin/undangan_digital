@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Header, SubHeader, Modal } from "../components"
+import { Header, SubHeader, Modal, WeddingCountdown } from "../components"
 import invitations from "../lib/data.json";
 import Notfound from "./404";
 import { FaPause, FaPlay } from "react-icons/fa6";
@@ -39,6 +39,7 @@ const Home = () => {
     <div className="overflow-x-hidden">
       <Header />
       <SubHeader />
+      <WeddingCountdown />
       <div
         className="fixed top-5 right-5 p-2 cursor-pointer rounded-lg"
         onClick={handleToogle}
