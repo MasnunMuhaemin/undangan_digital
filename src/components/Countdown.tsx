@@ -1,10 +1,10 @@
 import Countdown from "react-countdown-simple";
 
 const WeddingCountdown = () => {
-  let targetDate = new Date("2025-02-18T08:00:00+07:00").toISOString();
+  let targetDate = new Date("2025-02-18T09:00:00+07:00").toISOString();
 
   return (
-    <div className="flex relative items-center justify-center min-h-screen bg-[#423020]">
+    <div className="flex relative items-center justify-center min-h-screen bg-[#322501]">
       <img
         src="/images/ornamen/ornamen3.png"
         alt="Ornament"
