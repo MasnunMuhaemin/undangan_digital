@@ -10,15 +10,15 @@ interface Pesan {
 }
 
 const Inputs = ({ name }: { name: string }) => {
-  const [pesan, setPesan] = useState<Pesan[]>([]); 
-  const [pesanInput, setPesanInput] = useState<string>(""); 
+  const [pesan, setPesan] = useState<Pesan[]>([]);
+  const [pesanInput, setPesanInput] = useState<string>("");
   const [selectedPresence, setSelectedPresence] = useState<string>(""); // Menyimpan nilai '1' atau '0'
 
   useEffect(() => {
     axios
       .get<{ data: Pesan[] }>("https://alope.id/wedding.php/api/pesan")
       .then((response) => {
-        setPesan(response.data.data); 
+        setPesan(response.data.data);
       })
       .catch((err) => {
         console.error(err);
@@ -36,9 +36,9 @@ const Inputs = ({ name }: { name: string }) => {
     axios
       .post<{ data: Pesan }>("https://alope.id/wedding.php/api/pesan", data)
       .then((response) => {
-        setPesan((prev) => [...prev, response.data.data]); 
-        setPesanInput(""); 
-        setSelectedPresence(""); 
+        setPesan((prev) => [...prev, response.data.data]);
+        setPesanInput("");
+        setSelectedPresence("");
       })
       .catch((err) => {
         console.error("Error posting data:", err);
@@ -69,7 +69,7 @@ const Inputs = ({ name }: { name: string }) => {
             {/* Menambahkan pilihan kehadiran dengan nilai '1' dan '0' */}
             {[
               { label: "Ya, saya akan hadir", value: "1" },
-              { label: "Maaf, saya tidak bisa datang", value: "0" }
+              { label: "Maaf, saya tidak bisa datang", value: "0" },
             ].map((presence) => (
               <div key={presence.value} className="flex gap-2 items-center">
                 {selectedPresence === presence.value ? (
@@ -115,7 +115,10 @@ const Inputs = ({ name }: { name: string }) => {
                   Nama: {pesan.name}
                 </p>
                 <p className="text-sm text-gray-600">
-                  Kehadiran: {pesan.presence === "1" ? "Ya, saya akan hadir" : "Maaf, saya tidak bisa datang"}
+                  Kehadiran:{" "}
+                  {pesan.presence === "1"
+                    ? "Ya, saya akan hadir"
+                    : "Maaf, saya tidak bisa datang"}
                 </p>
                 <p className="text-sm text-gray-600">Pesan: {pesan.pesan}</p>
               </div>
@@ -127,6 +130,9 @@ const Inputs = ({ name }: { name: string }) => {
           )}
         </div>
       </div>
+          {/* <div>
+            <img src="/images/ornamen/ornamen1.png" alt="" />
+          </div> */}
     </div>
   );
 };

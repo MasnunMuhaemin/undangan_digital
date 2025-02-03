@@ -4,11 +4,11 @@ const WeddingCountdown = () => {
   let targetDate = new Date("2025-02-18T09:00:00+07:00").toISOString();
 
   return (
-    <div className="flex relative items-center justify-center min-h-screen bg-secondary text-tertiary">
+    <div className="flex relative items-center justify-center bg-secondary text-tertiary">
       <img
         src="/images/ornamen/ornamen3.png"
         alt="Ornament"
-        className="absolute inset-0 h-full"
+        className="absolute inset-0 "
       />
       <div className="relative text-white overflow-hidden">
         {/* Ornamental Image */}
