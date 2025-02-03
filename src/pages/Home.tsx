@@ -7,6 +7,7 @@ import {
   Maps,
   Inputs,
   Gallery,
+  Banks,
 } from "../components";
 import invitations from "../lib/data.json";
 import Notfound from "./404";
@@ -51,6 +52,7 @@ const Home = () => {
       <Maps />
       <Inputs name={name} />
       <Gallery />
+      <Banks />
       <div
         className="fixed top-5 right-5 p-2 cursor-pointer rounded-lg"
         onClick={handleToogle}

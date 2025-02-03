@@ -5,3 +5,4 @@ export { default as WeddingCountdown } from "./Countdown";
 export { default as Maps } from "./Maps";
 export { default as Inputs } from "./Inputs";
 export { default as Gallery } from "./Gallery";
+export { default as Banks } from "./Banks";
