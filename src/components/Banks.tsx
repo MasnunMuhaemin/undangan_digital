@@ -38,9 +38,9 @@ const Banks = () => {
   return (
     <div className="text-tertiary p-8 relative">
       {/* Container Utama */}
-      <h1 className="font1 text-3xl font-bold text-left mb-2">GIFTS</h1>
-      <div className="h-1 bg-tertiary w-full mb-4"></div>
-      <p className="font1 text-center text-[8px] mb-8">
+      <h1 className="font1 text-3xl font-bold text-left mb-2" data-aos="fade-right" data-aos-delay="300">GIFTS</h1>
+      <div className="h-1 bg-tertiary w-full mb-4" data-aos="fade-left" data-aos-delay="350"></div>
+      <p className="font1 text-center text-[8px] mb-8" data-aos="fade-right" data-aos-delay="450">
         "Kami sangat menghargai kehadiran dan doa restu Anda di hari istimewa
         kami. Kami menerima uang berupa transfer digital di bawah ini dengan
         senang hati."
@@ -76,16 +76,16 @@ const Banks = () => {
       {copySuccess && (
         <span className="text-green-500 mt-2">{copySuccess}</span>
       )}
-      <p className="font1 text-center text-xs mb-8">
+      <p className="font1 text-center text-xs mb-8" data-aos="fade-zoom-up" data-aos-delay="300">
         Kami akan sangat senang dan merasa terhormat jika Bapak/Ibu/Saudara/i
         bisa hadir di hari bahagia kami. Doa dan dukungan dari Anda akan menjadi
         pelengkap kebahagiaan kami. Terima kasih banyak atas waktu dan perhatian
         yang diberikan.
       </p>
-      <p className="font2 text-center text-2xl font-semibold mb-4">
+      <p className="font2 text-center text-2xl font-semibold mb-4" data-aos="fade-left">
         Wassalamualaikum Wr. Wb
       </p>
-      <p className="font2 text-center text-xl font-bold mb-16">
+      <p className="font2 text-center text-xl font-bold mb-16" data-aos="fade-right">
         WISNU & MEILANI
       </p>
 

@@ -17,7 +17,11 @@ const SubHeader = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center relative">
           {/* Ornamen di belakang suami (posisi lebih atas) */}
-          <div className="absolute -left-20 md:-left-32 z-0 top-[-30px] md:top-[-50px]">
+          <div
+            className="absolute -left-20 md:-left-32 z-0 top-[-30px] md:top-[-50px]"
+            data-aos="fade-up-right"
+            data-aos-delay="600"
+          >
             <img
               src="/images/ornamen/gunungan.png"
               alt="Ornamen Suami"
@@ -32,6 +36,8 @@ const SubHeader = () => {
                 src="/images/wedding/suami.png"
                 alt="Welly"
                 className="w-40 h-52 md:w-60 md:h-72 rounded-lg object-cover"
+                data-aos="fade-left"
+                data-aos-delay="300"
               />
             </div>
             <div className="text-center">
@@ -45,10 +51,20 @@ const SubHeader = () => {
           </div>
 
           {/* Simbol & */}
-          <div className="text-3xl md:text-5xl font1">&amp;</div>
+          <div
+            className="text-3xl md:text-5xl font1"
+            data-aos="zoom-up"
+            data-aos-delay="400"
+          >
+            &amp;
+          </div>
 
           {/* Ornamen di belakang istri (posisi lebih bawah) */}
-          <div className="absolute -right-20 md:-right-32 z-0 bottom-[-30px] md:bottom-[-50px]">
+          <div
+            className="absolute -right-20 md:-right-32 z-0 bottom-[-30px] md:bottom-[-50px]"
+            data-aos="fade-up-left"
+            data-aos-delay="600"
+          >
             <img
               src="/images/ornamen/gunungan.png"
               alt="Ornamen Istri"
@@ -63,6 +79,8 @@ const SubHeader = () => {
                 src="/images/wedding/istri.png"
                 alt="Tommi"
                 className="w-40 h-52 md:w-60 md:h-72 object-cover"
+                data-aos="fade-right"
+                data-aos-delay="300"
               />
             </div>
             <div className="text-center">

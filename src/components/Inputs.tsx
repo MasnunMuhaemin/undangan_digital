@@ -46,8 +46,29 @@ const Inputs = ({ name }: { name: string }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <form onSubmit={handleSubmit} className="px-8 mb-10 mt-5 w-full max-w-md">
+    <div className="flex flex-col items-center justify-center relative min-h-screen">
+      {/* Ornamen Gunungan */}
+      <div className="absolute top-1/2 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 flex justify-center w-[100vw] h-[100vh] opacity-45 overflow-hidden">
+        <img
+          src="/images/ornamen/gunungan1.png"
+          alt="Ornamen Gunungan"
+          className="object-cover"
+          data-aos="fade-up-right"
+          data-aos-delay="500" // Mengatur ukuran gambar agar tidak terlalu besar
+        />
+        <img
+          src="/images/ornamen/gunungan1.png"
+          alt="Ornamen Gunungan"
+          className="object-cover"
+          data-aos="fade-up-left"
+          data-aos-delay="500" // Mengatur ukuran gambar agar tidak terlalu besar
+        />
+      </div>
+
+      <form
+        onSubmit={handleSubmit}
+        className="px-8 mb-10 mt-5 w-full max-w-md z-10 relative"
+      >
         <p className="font-bold text-4xl text-tertiary text-left">
           Konfirmasi Kehadiran
         </p>
@@ -100,7 +121,7 @@ const Inputs = ({ name }: { name: string }) => {
         </div>
       </form>
 
-      <div className="w-[90%] max-w-md p-4 bg-secondary rounded-lg shadow-lg">
+      <div className="w-[90%] max-w-md p-4 bg-secondary rounded-lg shadow-lg z-10 relative">
         <h2 className="font1 text-lg font-bold text-center mb-4 text-tertiary">
           Daftar Konfirmasi
         </h2>
@@ -130,9 +151,6 @@ const Inputs = ({ name }: { name: string }) => {
           )}
         </div>
       </div>
-          {/* <div>
-            <img src="/images/ornamen/ornamen1.png" alt="" />
-          </div> */}
     </div>
   );
 };

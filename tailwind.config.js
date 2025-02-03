@@ -12,8 +12,9 @@ export default {
         tertiary: "#FFFFFF"
       },
       screens: {
-        'mobile-320': '320px',  // Menambahkan breakpoint 320px
-        'mobile-425': '425px',  // Menambahkan breakpoint 425px
+        'mobile-320': {'max': '320px'},  // Menambahkan breakpoint 320px
+        'mobile-375': {'max': '375px'},  // Menambahkan breakpoint 320px
+        'mobile-425': {'max':'425px'},  // Menambahkan breakpoint 425px
       },
     },
   },

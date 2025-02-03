@@ -53,6 +53,8 @@ export default function Modal({ audio }: { audio: HTMLAudioElement }) {
             src="/images/ornamen/ornamen4.png"
             alt="Gold Icon"
             className="w-28"
+            data-aos="zoom-in"
+            data-aos-delay="400"
           />
         </div>
 
@@ -63,13 +65,29 @@ export default function Modal({ audio }: { audio: HTMLAudioElement }) {
           </p>
 
           <div className="font2 items-center mt-3 mb-8 font-extrabold">
-            <div className="font-satisfy text-3xl md:text-5xl lg:text-6xl mt-5 mb-4">
+            <div
+              className="font-satisfy text-3xl md:text-5xl lg:text-6xl mt-5 mb-4"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               <p>WISNU & MEILANI</p>
             </div>
 
-            <p className="text-lg font-semibold mb-3">Dear,</p>
+            <p
+              className="text-lg font-semibold mb-3"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              Dear,
+            </p>
             {invitedPerson ? (
-              <p className="text-xl font-bold">{invitedPerson.name}</p>
+              <p
+                className="text-xl font-bold"
+                data-aos="fade-right"
+                data-aos-delay="450"
+              >
+                {invitedPerson.name}
+              </p>
             ) : (
               <p className="text-xl font-bold text-red-500">
                 Undangan tidak ditemukan
