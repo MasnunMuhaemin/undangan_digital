@@ -2,7 +2,7 @@ const Header = () => {
   return (
     <div
       className="relative w-full h-screen bg-cover bg-center flex justify-center items-center"
-      style={{ backgroundImage: "url('/images/wedding/header.jpeg')" }}
+      style={{ backgroundImage: "url('/images/wedding/header1.jpeg')" }}
     >
       {/* Wrapper agar tetap seukuran Mobile L (425px) dan berada di tengah */}
       <div className="relative w-full bg-black bg-opacity-30 flex flex-col justify-end text-tertiary h-full">
