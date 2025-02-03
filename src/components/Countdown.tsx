@@ -4,7 +4,7 @@ const WeddingCountdown = () => {
   let targetDate = new Date("2025-02-18T09:00:00+07:00").toISOString();
 
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen mobile-420:px-4">
+    <div className="relative flex flex-col justify-center items-center mobile-420:px-4">
       {/* Ornamen (Tetap di atas bg-secondary) */}
       <img
         src="/images/ornamen/ornamen5.png"
