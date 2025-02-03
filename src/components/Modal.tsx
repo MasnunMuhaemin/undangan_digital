@@ -37,12 +37,16 @@ export default function Modal({ audio }: { audio: HTMLAudioElement }) {
       }`}
     >
       <div className="absolute inset-0 bg-center bg-no-repeat bg-black opacity-[.55] z-0"></div>
+
       <div
         onClick={(e) => e.stopPropagation()}
-        className={`bg-[image:url('/images/wedding/header.jpeg')] md:bg-[image:url('/images/wedding/header.jpeg')] bg-cover z-10 bg-center bg-no-repeat shadow p-6 transition-all duration-500 w-full h-full ${
-          open ? "opacity-100" : "scale-125 opacity-0"
+        className={`bg-[image:url('/images/wedding/header.jpeg')] md:bg-[image:url('/images/wedding/header.jpeg')] bg-cover z-10 bg-center bg-no-repeat shadow p-6 transition-all duration-[800ms] ease-in-out w-full h-full ${
+          open ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-100vh]" // Modal hilang ke atas
         }`}
       >
+        {/* Layer hitam dengan opacity hanya di atas gambar */}
+        <div className="absolute inset-0 bg-black opacity-50 z-0"></div>
+
         {/* Ornamen tetap di paling atas */}
         <div className="absolute top-5 left-1/2 transform -translate-x-1/2">
           <img

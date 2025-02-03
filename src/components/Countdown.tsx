@@ -13,9 +13,9 @@ const WeddingCountdown = () => {
       />
 
       {/* Content Section */}
-      <div className="relative z-20 text-white text-center max-w-lg mt-20">
-        <h1 className="font1 text-lg font-bold">HARI YANG KAMI NANTI</h1>
-        <p className="font2 text-[11px] w-[250px] font-bold mt-3 mb-7 leading-relaxed">
+      <div className="relative z-20 text-white text-center max-w-lg mobile-425:mt-20">
+        <h1 className="font1 mobile-425:text-lg font-bold">HARI YANG KAMI NANTI</h1>
+        <p className="font2 mobile-320:text-[11px] w-[250px] font-bold mt-3 mb-7 leading-relaxed">
           Dengan segala rasa syukur yang tak terhingga, kami mengucap bahagia.
           Allah telah menjawab doa kami untuk satu waktu yang paling indah. Di
           hari penuh arti dan cinta, kami dengan segenap hati memohon doa restu
@@ -53,7 +53,7 @@ const WeddingCountdown = () => {
         />
 
         {/* Wedding Details */}
-        <div className="font1 text-sm">
+        <div className="font1 mobile-425:text-sm mobile-320:text-[12px]">
           <p className="font-bold">RESEPSI PERNIKAHAN</p>
           <p>Hari : Selasa, 18 Februari 2025</p>
           <p>Waktu : 09:00</p>

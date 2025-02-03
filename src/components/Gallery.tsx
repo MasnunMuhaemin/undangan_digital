@@ -11,12 +11,14 @@ const Gallery = () => {
         </h1>
 
         {/* Grid Gallery dengan Padding di Kiri & Kanan */}
-        <div className="container mx-auto px-4 md:px-10">
+        <div className="container mx-auto px-4 md:px-10 pb-8">
+          {" "}
+          {/* Add pb-8 for bottom padding */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-2">
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688025668.png"
+                src="/images/wedding/img1.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -24,7 +26,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029344.png"
+                src="/images/wedding/img2.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -32,7 +34,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029370.png"
+                src="/images/wedding/img3.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -40,7 +42,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029384.png"
+                src="/images/wedding/img4.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -48,7 +50,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029394.png"
+                src="/images/wedding/img5.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -56,7 +58,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029408.png"
+                src="/images/wedding/img6.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -64,7 +66,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029424.jpg"
+                src="/images/wedding/img7.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -72,7 +74,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="https://pagedone.io/asset/uploads/1688029434.png"
+                src="/images/wedding/img8.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>

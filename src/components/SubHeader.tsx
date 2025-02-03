@@ -1,6 +1,6 @@
 const SubHeader = () => {
   return (
-    <div className="w-full  flex justify-center text-tertiary py-8">
+    <div className="w-full flex justify-center text-tertiary py-8">
       {/* Wrapper untuk mempertahankan ukuran Mobile L */}
       <div className="w-full max-w-[425px] text-center">
         <img
@@ -15,7 +15,16 @@ const SubHeader = () => {
           pernikahan kami.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center">
+        <div className="flex flex-col md:flex-row justify-center items-center relative">
+          {/* Ornamen di belakang suami (posisi lebih atas) */}
+          <div className="absolute -left-20 md:-left-32 z-0 top-[-30px] md:top-[-50px]">
+            <img
+              src="/images/ornamen/gunungan.png"
+              alt="Ornamen Suami"
+              className="w-48 md:w-64"
+            />
+          </div>
+
           {/* Kartu Welly */}
           <div className="flex flex-row-reverse items-center relative">
             <div>
@@ -37,6 +46,15 @@ const SubHeader = () => {
 
           {/* Simbol & */}
           <div className="text-3xl md:text-5xl font1">&amp;</div>
+
+          {/* Ornamen di belakang istri (posisi lebih bawah) */}
+          <div className="absolute -right-20 md:-right-32 z-0 bottom-[-30px] md:bottom-[-50px]">
+            <img
+              src="/images/ornamen/gunungan.png"
+              alt="Ornamen Istri"
+              className="w-48 md:w-64"
+            />
+          </div>
 
           {/* Kartu Tommi */}
           <div className="flex items-center relative">

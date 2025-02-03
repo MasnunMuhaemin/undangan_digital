@@ -10,7 +10,11 @@ export default {
         primary: "#000000",
         secondary: "#322501",
         tertiary: "#FFFFFF"
-      }
+      },
+      screens: {
+        'mobile-320': '320px',  // Menambahkan breakpoint 320px
+        'mobile-425': '425px',  // Menambahkan breakpoint 425px
+      },
     },
   },
   plugins: [],

@@ -36,7 +36,8 @@ const Banks = () => {
   };
 
   return (
-    <div className="text-tertiary p-8">
+    <div className="text-tertiary p-8 relative">
+      {/* Container Utama */}
       <h1 className="font1 text-3xl font-bold text-left mb-2">GIFTS</h1>
       <div className="h-1 bg-tertiary w-full mb-4"></div>
       <p className="font1 text-center text-[8px] mb-8">
@@ -87,6 +88,15 @@ const Banks = () => {
       <p className="font2 text-center text-xl font-bold mb-16">
         WISNU & MEILANI
       </p>
+
+      {/* Ornamen di bagian bawah yang mengisi lebar section */}
+      <div className="absolute bottom-0 left-0 w-full z-0">
+        <img
+          src="/images/ornamen/ornamen6.png" 
+          alt="Ornamen"
+          className="w-full h-auto"
+        />
+      </div>
     </div>
   );
 };
