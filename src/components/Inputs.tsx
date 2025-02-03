@@ -48,14 +48,7 @@ const Inputs = ({ name }: { name: string }) => {
   return (
     <div className="flex flex-col items-center justify-center relative min-h-screen">
       {/* Ornamen Gunungan */}
-      <div className="absolute gap-3 top-1/2 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 flex justify-center w-[100vw] h-[100vh] opacity-45 overflow-hidden">
-        <img
-          src="/images/ornamen/gunungan1.png"
-          alt="Ornamen Gunungan"
-          className="object-cover"
-          data-aos="fade-up-right"
-          data-aos-delay="500" // Mengatur ukuran gambar agar tidak terlalu besar
-        />
+      <div className="absolute top-1/2 left-1/2 right-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0 flex justify-center w-[100vw] h-[100vh] opacity-45 overflow-hidden">
         <img
           src="/images/ornamen/gunungan1.png"
           alt="Ornamen Gunungan"
