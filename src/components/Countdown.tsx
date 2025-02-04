@@ -4,7 +4,7 @@ const WeddingCountdown = () => {
   let targetDate = new Date("2025-02-18T09:00:00+07:00").toISOString();
 
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen mobile-420:px-4">
+    <div className="relative flex flex-col justify-center items-center mobile-420:px-4">
       {/* Ornamen (Tetap di atas bg-secondary) */}
       <img
         src="/images/ornamen/ornamen5.png"
@@ -54,7 +54,7 @@ const WeddingCountdown = () => {
 
         {/* Wedding Details */}
         <div className="font1 mobile-375:text-[12px] mobile-320:mb-4 mobile-375:mb-6 mt-6 text-sm">
-          <p className="font-bold mobile-320:text-[10px]">RESEPSI PERNIKAHAN</p>
+          <p className="font-bold mobile-320:text-[10px]">NGUNDUH MANTU</p>
           <p className="mobile-320:text-[10px]">Hari : Selasa, 18 Februari 2025</p>
           <p className="mobile-320:text-[10px]">Waktu : 09:00</p>
           <p className="mobile-320:text-[10px]">Tempat : Kuningan, Jawa Barat</p>

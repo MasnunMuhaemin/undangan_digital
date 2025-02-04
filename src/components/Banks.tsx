@@ -62,9 +62,9 @@ const Banks = () => {
         <div className="bg-tertiary flex flex-col items-center justify-center p-4">
           <img src="/images/bank/dana.png" alt="" className="w-24 mb-2" />
           <p className="text-black text-center w-full">a.n Meilani</p>
-          <p className="text-black text-center w-full">081286181363</p>
+          <p className="text-black text-center w-full">089503397261</p>
           <button
-            onClick={() => copyToClipboard("081286181363")}
+            onClick={() => copyToClipboard("089503397261")}
             className="mt-2 px-4 py-2 text-xs bg-transparent border-2 border-black text-black rounded hover:bg-black hover:text-white hover:opacity-70 transition duration-200"
             aria-label="Copy Dana Account Number"
           >

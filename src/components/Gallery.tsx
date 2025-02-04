@@ -58,7 +58,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="/images/wedding/img6.jpeg"
+                src="/images/wedding/img9.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>
@@ -74,7 +74,7 @@ const Gallery = () => {
             <div className="relative group">
               <img
                 className="h-auto max-w-full rounded-lg"
-                src="/images/wedding/img8.jpeg"
+                src="/images/wedding/img6.jpeg"
                 alt="Gallery image"
               />
               <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition-all duration-300 rounded-lg"></div>

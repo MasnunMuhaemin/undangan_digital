@@ -53,8 +53,8 @@ const Inputs = ({ name }: { name: string }) => {
           src="/images/ornamen/gunungan1.png"
           alt="Ornamen Gunungan"
           className="object-cover"
-          data-aos="fade-up-left"
-          data-aos-delay="500" // Mengatur ukuran gambar agar tidak terlalu besar
+          data-aos="fade-zoom-in"
+          data-aos-delay="400" // Mengatur ukuran gambar agar tidak terlalu besar
         />
       </div>
 
