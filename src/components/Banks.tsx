@@ -61,7 +61,7 @@ const Banks = () => {
         </div>
         <div className="bg-tertiary flex flex-col items-center justify-center p-4">
           <img src="/images/bank/dana.png" alt="" className="w-24 mb-2" />
-          <p className="text-black text-center w-full">a.n Meilani</p>
+          <p className="text-black text-center w-full">a.n Batara Wisnu</p>
           <p className="text-black text-center w-full">089503397261</p>
           <button
             onClick={() => copyToClipboard("089503397261")}
