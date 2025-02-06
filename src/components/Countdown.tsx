@@ -15,7 +15,7 @@ const WeddingCountdown = () => {
       {/* Content Section */}
       <div className="relative z-20 text-white text-center mobile-320:mt-10 mt-20">
         <h1 className="font1 mobile-320:text-[10px] mobile-425:text-lg font-bold">HARI YANG KAMI NANTI</h1>
-        <p className="font2 mobile-320:text-[8px] mobile-320:w-[240px] mobile-375:text-[12px] mobile-375:w-[270px] text-sm w-[300px] font-bold mt-3 mobile-320:mb-0 mobile-375:mb-4 leading-relaxed">
+        <p className="font2 mobile-320:text-[8px] mobile-320:w-[240px] mobile-375:text-[12px] mobile-375:w-[270px] text-sm w-[300px] font-medium mt-3 mobile-320:mb-0 mobile-375:mb-4 leading-relaxed">
           Dengan segala rasa syukur yang tak terhingga, kami mengucap bahagia.
           Allah telah menjawab doa kami untuk satu waktu yang paling indah. Di
           hari penuh arti dan cinta, kami dengan segenap hati memohon doa restu
